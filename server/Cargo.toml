@@ -1,0 +1,19 @@
+[package]
+name = "toffee-server"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+anyhow = "1.0.89"
+axum = { version = "0.7.6", features = ["macros"] }
+clap = { version = "4.5.18", features = ["derive"] }
+dotenvy = "0.15.7"
+itertools = "0.13.0"
+jiff = "0.1.13"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.128"
+sqlx = { version = "0.8.2", features = ["sqlite", "runtime-tokio"] }
+tokio = { version = "1.40.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
